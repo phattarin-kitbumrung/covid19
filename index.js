@@ -24,22 +24,22 @@ app.get('/covid19', async(req, res) => {
 
 app.listen(port, async() => {
   console.log('Example app listening on port 3000!')
-  /*const thaidata = await getcountries()
+  const thaidata = await getcountries()
   try {
     const notify = new lineapi.Notify({
         token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
     })
-
-        notify.send({
-            message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
-            + '\ndeaths:' + thaidata.deaths + '\ntodayDeaths:' + thaidata.todayDeaths
-            + '\nrecovered:' + thaidata.recovered + '\nactive:' + thaidata.active
-            + '\ncritical:' + thaidata.critical
-        }).then()
+    notify.send({
+      message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
+        + '\ndeaths:' + thaidata.deaths + '\ntodayDeaths:' + thaidata.todayDeaths
+        + '\nrecovered:' + thaidata.recovered + '\nactive:' + thaidata.active
+        + '\ncritical:' + thaidata.critical
+        + '\n\n developed by minizymint'
+      }).then()
     }
     catch(error){
       console.log(error)
-    }*/
+    }
     
 });
 
