@@ -1,1 +1,1 @@
-web: node covid19.js
+web: node index.js
