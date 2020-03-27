@@ -7,7 +7,8 @@ const port = process.env.PORT || 3000
 app.get('/covid19', async(req, res) => {
   const thaidata = await getcountries()
   const date = new Date()
-  //const time = date.getHours() + ':' + date.getMinutes()
+  const time = date.getHours() + ':' + date.getMinutes()
+  res.send(date)
   try {
     const notify = new lineapi.Notify({
         token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
