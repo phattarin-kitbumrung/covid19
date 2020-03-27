@@ -8,7 +8,8 @@ app.get('/covid19', async(req, res) => {
   const thaidata = await getcountries()
   try {
     const notify = new lineapi.Notify({
-        token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
+        //token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
+        token: 'y5NVDu1Iqou3iGIHKHcYw6vdgOpTXYrCPg6R8VGCfaC'
     })
     notify.send({
       message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
@@ -27,7 +28,8 @@ app.listen(port, async() => {
   const thaidata = await getcountries()
   try {
     const notify = new lineapi.Notify({
-        token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
+        //token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
+        token: 'y5NVDu1Iqou3iGIHKHcYw6vdgOpTXYrCPg6R8VGCfaC'
     })
     notify.send({
       message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
