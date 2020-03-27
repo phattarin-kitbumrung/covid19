@@ -27,7 +27,7 @@ app.get('/', async(req, res) => {
 
 app.listen(port, async() => {
   console.log('Example app listening on port 3000!')
-  const thaidata = await getcountries()
+  /*const thaidata = await getcountries()
   try {
     const notify = new lineapi.Notify({
         token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
@@ -42,7 +42,7 @@ app.listen(port, async() => {
     }
     catch(error){
       console.log(error)
-    }
+    }*/
     
 });
 
