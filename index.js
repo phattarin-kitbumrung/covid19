@@ -4,7 +4,7 @@ const lineapi = require('line-api')
 const app = express()
 const port = process.env.PORT || 3000
 
-app.get('/covid19', async(req, res) => {
+app.get('/', async(req, res) => {
   const thaidata = await getcountries()
   const date = new Date()
   const time = date.getHours() + ':' + date.getMinutes()
