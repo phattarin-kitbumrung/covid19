@@ -8,12 +8,11 @@ app.get('/covid19', async(req, res) => {
   const thaidata = await getcountries()
   const date = new Date()
   const time = date.getHours() + ':' + date.getMinutes()
-  res.send(time)
   try {
     const notify = new lineapi.Notify({
         token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
     })
-    if(time == '11:18'){
+    if(time == '5:30'){
         notify.send({
             message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
             + '\ndeaths:' + thaidata.deaths + '\ntodayDeaths:' + thaidata.todayDeaths
