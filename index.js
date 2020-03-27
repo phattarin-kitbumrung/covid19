@@ -12,7 +12,7 @@ app.get('/covid19', async(req, res) => {
     const notify = new lineapi.Notify({
         token: 'v9nOsQexb6EV0Gpenyb6hocwnOcqdSfwOB7yJRSYczD'
     })
-    if(time == '5:30'){
+    if(time == '5:34'){ res.send("xxx")
         notify.send({
             message: 'Thailand Updated' + '\ncases:' + thaidata.cases + '\ntodayCases:' + thaidata.todayCases
             + '\ndeaths:' + thaidata.deaths + '\ntodayDeaths:' + thaidata.todayDeaths
