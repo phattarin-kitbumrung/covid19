@@ -45,7 +45,7 @@ app.listen(port, async() => {
 
 const getcountries = async() => {
     try {
-        const response = await axios.get("https://corona.lmao.ninja/countries/thailand");
+        const response = await axios.get("https://corona.lmao.ninja/v2/countries/thailand");
         return response.data
       } catch (error) {
         return error
